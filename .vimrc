@@ -1,5 +1,6 @@
 "--------------------------------------------------------------------------
 "" neobundle
+"--------------------------------------------------------------------------
 set nocompatible               " Be iMproved
 filetype off                   " Required!
 
@@ -17,6 +18,9 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " ファイルをtree表示してくれる
 NeoBundle 'scrooloose/nerdtree'
 
+" カラースキーム
+NeoBundle 'altercation/vim-colors-solarized'
+
 call neobundle#end()
 
 filetype plugin indent on     " Required!
@@ -28,6 +32,18 @@ if neobundle#exists_not_installed_bundles()
   echomsg 'Please execute ":NeoBundleInstall" command.'
   "finish
 endif
+"--------------------------------------------------------------------------
+"" neobundle end
+"--------------------------------------------------------------------------
+
+"--------------------------------------------------------------------------
+" カラースキーム設定
+"--------------------------------------------------------------------------
+syntax enable
+set background=dark
+"set background=light
+
+colorscheme solarized
 
 "--------------------------------------------------------------------------
 " 編集系設定

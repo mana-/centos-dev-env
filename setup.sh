@@ -11,6 +11,11 @@ if [ -e ~/.bashrc ]; then
 fi
 ln -s ~/centos-dev-env/.bashrc ~/.bashrc
 
+if [ -e ~/.bash_profile ]; then
+  mv ~/.bash_profile ~/.bash_profile.bak  
+fi
+ln -s ~/centos-dev-env/.bash_profile ~/.bash_profile
+
 # vim
 mkdir -p ~/.vim/bundle
 if [ ! -e ~/.vim/bundle/neobundle.vim ]; then

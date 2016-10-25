@@ -1,0 +1,5 @@
+
+# SLACK用設定
+export SLACK_TOKEN_ID='xxxxx'
+export SLACK_CHANNEL_ID_ABU='xxxxx'
+

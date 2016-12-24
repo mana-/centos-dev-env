@@ -28,8 +28,14 @@ PS1="[\u@\W]\[\033[36m\]\$(__git_ps1)\[\033[00m\]\$ "
 #
 # いきなり削除の防止
 alias rm='rm -i'
+# リスト表示
+alias ls='ls -G'
+alias ll='ls -lG'
+alias la='ls -laG'
+
 # sudoユーザの追加
 alias sudoers='sudo vim /etc/sudoers'
 
 # User specific aliases and functions
 
+export PATH=$PATH:~/bin

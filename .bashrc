@@ -5,17 +5,15 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+#
 # Gitプロンプト表示設定
 #
-# mkdir -p /opt/git/
-# cd /opt/git
-# wget https://raw.github.com/git/git/master/contrib/completion/git-completion.bash
-# wget https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh
-#
+
 # git コマンド補完
 if [ -f /opt/git/git-completion.bash ]; then
     source /opt/git/git-completion.bash
 fi
+
 # git プロンプト表示
 if [ -f /opt/git/git-prompt.sh ]; then
     source /opt/git/git-prompt.sh

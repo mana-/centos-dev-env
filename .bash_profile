@@ -11,7 +11,7 @@ PATH=$PATH:$HOME/bin
 
 export PATH
 
-if [ -f ~/centos-dev-env/custom_env ]; then
-	. ~/centos-dev-env/custom_env
+if [ -f ~/dev-env/custom_env ]; then
+	. ~/dev-env/custom_env
 fi
 
